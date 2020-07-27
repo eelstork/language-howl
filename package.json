@@ -1,0 +1,14 @@
+{
+  "name": "language-howl",
+  "version": "0.1.2",
+  "description": "(╯°□°)╯⌒ C#",
+  "keywords": [
+    "language",
+    "grammar"
+  ],
+  "repository": "https://github.com/atom/language-howl",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}
