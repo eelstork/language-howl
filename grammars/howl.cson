@@ -11,7 +11,19 @@ fileTypes: ['howl']
 #  start: '// '
 
 scopes:
-  identifier: 'string',
+  id: 'entity.name.function'
+  comment: 'comment.line'
+  key: 'keyword.control'
+  sym: 'keyword.operator'
+  sym: 'keyword.operator'
+  str: 'string.quoted'
+  bool: 'constant.language'
+  char: 'string.quoted'
+  int: 'constant.numeric'
+  null: 'constant.null'
+  real: 'constant.numeric'
+  # z ???
+
   #identifier: {exact: '⤴', scopes: 'keyword'}
 
 # 'top_level': 'source.rnc'
