@@ -2,13 +2,17 @@
   "name": "language-howl",
   "version": "0.1.3",
   "description": "(╯°□°)╯⌒ C#",
-  "keywords": [
-    "language",
-    "grammar"
-  ],
   "repository": "https://github.com/eelstork/language-howl",
+  "keywords": [
+    "Howl",
+    "C#",
+    "Csharp"
+  ],
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+    "tree-sitter-howl": "0.x"
   }
 }
