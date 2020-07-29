@@ -1,22 +1,31 @@
 name      : 'Howl'
 
 scopeName : 'source.howl'
+
 type      : 'tree-sitter'
+
 parser    : 'tree-sitter-howl'
+
 fileTypes : ['howl']
 
 scopes:
-  id: 'entity.name.function'
-  comment: 'comment.line'
-  key: 'keyword.control'
-  sym: 'keyword.operator'
-  str: 'string.quoted'
-  bool: 'constant.language'
-  char: 'string.quoted'
-  int: 'constant.numeric'
-  null: 'constant.null'
-  real: 'constant.numeric'
-  cat: 'storage.type'
-  mod: 'storage.modifier'
+  mod: 'storage.keyword'
+  cat: 'name.type'  # name.type
+  op: 'keyword.operator'  # keyword.operator
+  prim: 'entity.name.type'
+  bt: ''
   flow: 'keyword.control'
+  key: 'keyword.control'
+  comment: 'comment'  # comment.line
+  z: 'operator'
+  #
+  null: 'constant'
+  bool: 'constant'
+  char: 'string'
+  real: 'numeric'
+  int: 'numeric'
+  str: 'string'
+  #
+  id: 'entity.name.id'
+  type: 'entity.name.type'
   # z ???
