@@ -10,16 +10,14 @@ fileTypes : ['howl']
 
 scopes:
   mod: 'storage.modifier.cs'
-  cat: 'keyword.other.class.cs'  # name.type
-  op: 'keyword.operator.cs'  # keyword.operator
+  cat: 'keyword.other.class.cs'
+  op: 'keyword.operator.cs'
   prim: 'keyword.type.cs'
-  bt: ''
-  # That would override general 'flow' rendering
-  # flow: {exact: '⮐', scopes: 'variable'}
+  bt: 'constant.language.al'
   flow: 'keyword.control.cs'
   return: 'keyword.control.return.cs'
   key: 'keyword.other.cs'
-  comment: 'comment.cs'  # comment.line
+  comment: 'comment.cs'
   z: 'operator.cs'
   #
   null: 'constant.language.null.cs'
