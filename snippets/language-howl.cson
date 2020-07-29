@@ -284,15 +284,6 @@
   'GetComponent':
     prefix : 'GetComponent'
     body   : '⧼$0⧽'
-  'Debug.Log':
-    prefix : 'DebugL'
-    body   : '📝'
-  'Debug.LogWarning':
-    prefix : 'DebugL'
-    body   : '🚸'
-  'Debug.LogError':
-    prefix : 'DebugL'
-    body   : '⛔️'
   '[UnityTest] public IEnumerator':
     prefix : 'utest'
     body   : '⏚ '
