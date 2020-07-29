@@ -1,0 +1,14 @@
+@import "syntax-variables";
+
+.syntax--keyword.syntax--control.syntax--return {
+  .return_kw();
+}
+
+.return_kw() when (luma(@syntax-background-color) > 50%) {
+  font-weight: bold;
+  color: saturate(darken(@syntax-text-color, 10%), 25%);
+}
+
+.return_kw() when (default()) {
+  color: saturate(lighten(@syntax-text-color, 10%), 25%);
+}

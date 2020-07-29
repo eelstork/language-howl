@@ -16,7 +16,8 @@ scopes:
   bt: ''
   # That would override general 'flow' rendering
   # flow: {exact: '⮐', scopes: 'variable'}
-  flow: 'control.cs'
+  flow: 'keyword.control.cs'
+  return: 'keyword.control.return.cs'
   key: 'keyword.other.cs'
   comment: 'comment.cs'  # comment.line
   z: 'operator.cs'
