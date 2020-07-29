@@ -13,6 +13,6 @@
     "atom": ">=1.0.0 <2.0.0"
   },
   "dependencies": {
-    "tree-sitter-howl": "0.2.5"
+    "tree-sitter-howl": "0.2.6"
   }
 }
