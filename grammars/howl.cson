@@ -9,23 +9,25 @@ parser    : 'tree-sitter-howl'
 fileTypes : ['howl']
 
 scopes:
-  mod: 'storage.keyword'
-  cat: 'name.type'  # name.type
-  op: 'keyword.operator'  # keyword.operator
-  prim: 'entity.name.type'
+  mod: 'storage.modifier.cs'
+  cat: 'keyword.other.class.cs'  # name.type
+  op: 'keyword.operator.cs'  # keyword.operator
+  prim: 'keyword.type.cs'
   bt: ''
-  flow: 'keyword.control'
-  key: 'keyword.control'
-  comment: 'comment'  # comment.line
-  z: 'operator'
+  # That would override general 'flow' rendering
+  # flow: {exact: '⮐', scopes: 'variable'}
+  flow: 'control.cs'
+  key: 'keyword.other.cs'
+  comment: 'comment.cs'  # comment.line
+  z: 'operator.cs'
   #
-  null: 'constant'
-  bool: 'constant'
-  char: 'string'
-  real: 'numeric'
-  int: 'numeric'
-  str: 'string'
+  null: 'constant.language.null.cs'
+  bool: 'constant.language.boolean.cs'
+  char: 'string.quoted.single.cs'
+  real: 'constant.numeric.cs'
+  int: 'constant.numeric.cs'
+  str: 'string.quoted.double.cs'
   #
   id: 'entity.name.id'
   type: 'entity.name.type'
-  # z ???
+  z: 'punctuation.other.cs'

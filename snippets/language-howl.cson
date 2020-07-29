@@ -1,4 +1,328 @@
 '.source.howl':
   'Using static':
-    prefix: 'usings'
-    body: '⊐̥ '
+    prefix : 'usings'
+    body   : '⊐̥ '
+  'Using':
+    prefix : 'using'
+    body   : '⊐ '
+  'Namespace':
+    prefix : 'namespace'
+    body   : '⊓ '
+  'Class':
+    prefix : 'class'
+    body   : '○ '
+  'Interface':
+    prefix : 'interface'
+    body   : '◌ '
+  'Struct':
+    prefix : 'struct'
+    body   : '⊟ '
+  'Public':
+    prefix : 'public'
+    body   : '‒ '
+  'Protected':
+    prefix : 'protected'
+    body   : '◠ '
+  'Internal':
+    prefix : 'internal'
+    body   : '╌ '
+  'Protected internal':
+    prefix : 'pri'
+    body   : '╍ '
+  'Private':
+    prefix : 'private'
+    body   : '▰ '
+  'Public static':
+    prefix : 'ps'
+    body   : '‒̥ '
+  'Protected static':
+    prefix : 'prs'
+    body   : '◠̥ '
+  '⊐̥':
+    prefix : 'is'
+    body   : '╌̥ '
+  'Protected internal static':
+    prefix : 'pris'
+    body   : '╍̥ '
+  'Private static':
+    prefix : 'pvs'
+    body   : '▰̥ '
+  'Abstract':
+    prefix : 'abstract'
+    body   : 'ᴬ '
+  'Const':
+    prefix : 'const'
+    body   : 'ᴸ '
+  'Override':
+    prefix : 'override'
+    body   : '⁺ '
+  'Partial':
+    prefix : 'partial'
+    body   : 'ᴾ '
+  'Static':
+    prefix : 'static'
+    body   : '∘ '
+  'Virtual':
+    prefix : 'virtual'
+    body   : 'ᵛ '
+  'Sealed':
+    prefix : 'sealed'
+    body   : '🔒 '
+  'If':
+    prefix : 'if'
+    body   : '⤴ '
+  'Else':
+    prefix : 'else'
+    body   : '⤵ '
+  'Else if':
+    prefix : 'elif'
+    body   : '⤳ '
+  'Foreach':
+    prefix : 'foreach'
+    body   : '∀ '
+  'In':
+    prefix : 'in'
+    body   : '∈ '
+  'For':
+    prefix : 'for'
+    body   : '⟳ '
+  'While':
+    prefix : 'while'
+    body   : '⟲ '
+  'Switch':
+    prefix : 'switch'
+    body   : '⤭ '
+  'Case':
+    prefix : 'case'
+    body   : '⥰ '
+  'Break;':
+    prefix : 'break'
+    body   : '¦'
+  'Return':
+    prefix : 'return'
+    body   : '⮐ '
+  'Try':
+    prefix : 'try'
+    body   : '↯ '
+  'Catch':
+    prefix : 'catch'
+    body   : '⇤ '
+  'Throw':
+    prefix : 'throw'
+    body   : '(╯°□°)╯ '
+  'Finally':
+    prefix : 'finally'
+    body   : '(˙▿˙) '
+  'From':
+    prefix : 'from'
+    body   : '‖ '
+  'Where':
+    prefix : 'where'
+    body   : '¿ '
+  'Select':
+    prefix : 'select'
+    body   : '፥ '
+  'As (=>)':
+    prefix : 'as'
+    body   : '→ '
+  'Eq':
+    prefix : 'eq'
+    body   : '☰ '
+  'NEq':
+    prefix : 'neq'
+    body   : '≠ '
+  'GEq':
+    prefix : 'geq'
+    body   : '≥ '
+  'LEq':
+    prefix : 'leq'
+    body   : '≤ '
+  'And':
+    prefix : 'and'
+    body   : '∧ '
+  'Or':
+    prefix : 'or'
+    body   : '∨ '
+  'Operator':
+    prefix : 'operator'
+    body   : '⨕ '
+  'Explicit':
+    prefix : 'explicit'
+    body   : 'ᵉ '
+  'Implicit':
+    prefix : 'implicit'
+    body   : 'ⁱ '
+  'Bool':
+    prefix : 'bool'
+    body   : 'ㅇ'
+  'Float':
+    prefix : 'float'
+    body   : 'ㅅ'
+  'Int':
+    prefix : 'int'
+    body   : 'ᆞ'
+  'String':
+    prefix : 'string'
+    body   : 'ㄹ'
+  'Get =>':
+    prefix : 'get'
+    body   : '⇖ '
+  'Set =>':
+    prefix : 'set'
+    body   : '⇘ '
+  'Get':
+    prefix : 'getb'
+    body   : 'get{ $0 }'
+  'Set':
+    prefix : 'setb'
+    body   : 'set{ $0 }'
+  'True':
+    prefix : 'true'
+    body   : '✓'
+  'False':
+    prefix : 'false'
+    body   : '✗'
+  'New':
+    prefix : 'new'
+    body   : '⌢ '
+  'Var':
+    prefix : 'var'
+    body   : '∙ '
+  'Null':
+    prefix : 'null'
+    body   : '∅'
+  'This':
+    prefix : 'this'
+    body   : '⦿'
+  'Void':
+    prefix : 'void'
+    body   : '┈ '
+  'Action<>':
+    prefix : 'Action'
+    body   : '⒜'
+  'Func<>':
+    prefix : 'Func'
+    body   : '𝔽<${0:R}>'
+  'Dictionary':
+    prefix : 'Dictionary'
+    body   : '𝕄'
+  'HashSet':
+    prefix : 'HashSet'
+    body   : '𝕊'
+  'List':
+    prefix : 'List'
+    body   : '𝕃'
+  'Append':
+    prefix : 'Append'
+    body   : '±'
+  'Contains':
+    prefix : 'Contains'
+    body   : '∋'
+  'ContainsKey':
+    prefix : 'ContainsKey'
+    body   : '⋺'
+  'That':
+    prefix : 'that'
+    body   : '⧕'
+  'Do':
+    prefix : 'do'
+    body   : '⎚ '
+  '.Count':
+    prefix : 'Count'
+    body   : '⁝'
+  '.Length':
+    prefix : 'Length'
+    body   : '❙'
+  '.ToString()':
+    prefix : 'ToString'
+    body   : '🝠'
+  '.ToArray()':
+    prefix : 'ToArray'
+    body   : '৴'
+  '(this,':
+    prefix : 'xargs'
+    body   : '【$0)'
+  '[Test] public void':
+    prefix : 'test'
+    body   : '؟ '
+  '[SetUp] public void':
+    prefix : 'setup'
+    body   : '⍜ '
+  '[TearDown] public void':
+    prefix : 'teardown'
+    body   : '⍉ '
+  'Assert.Throws':
+    prefix : 'AssertT'
+    body   : 'ಠᴗಠ<$1>( ⎚ $0 );'
+  'GameObject':
+    prefix : 'GameObject'
+    body   : 'ロ'
+  'Component':
+    prefix : 'Component'
+    body   : '⫙'
+  'Transform':
+    prefix : 'Transform'
+    body   : 'エ'
+  'Quaternion':
+    prefix : 'Quaternion'
+    body   : 'ペ'
+  'Vector2':
+    prefix : 'v2'
+    body   : 'フ'
+  'Vector3':
+    prefix : 'Vector3'
+    body   : 'シ'
+  'Vector4':
+    prefix : 'v4'
+    body   : 'タ'
+  'Point2':
+    prefix : 'p2'
+    body   : 'ト'
+  'Point3':
+    prefix : 'Vector3'
+    body   : 'メ'
+  'Point4':
+    prefix : 'p4'
+    body   : 'メ̂'
+  'AddComponent':
+    prefix : 'AddComponent'
+    body   : '《$0》'
+  'GetComponent':
+    prefix : 'GetComponent'
+    body   : '⧼$0⧽'
+  'Debug.Log':
+    prefix : 'DebugL'
+    body   : '📝'
+  'Debug.LogWarning':
+    prefix : 'DebugL'
+    body   : '🚸'
+  'Debug.LogError':
+    prefix : 'DebugL'
+    body   : '⛔️'
+  '[UnityTest] public IEnumerator':
+    prefix : 'utest'
+    body   : '⏚ '
+  'Yield return new WaitForSeconds':
+    prefix : 'yieldsec'
+    body   : '⏰ '
+  'Status':
+    prefix : 'status'
+    body   : '⑂ '
+  'Public action':
+    prefix : 'publica'
+    body   : '▷ '
+  'Private action':
+    prefix : 'privatea'
+    body   : '▶ '
+  'Done()':
+    prefix : 'done'
+    body   : '◇'
+  'Cont()':
+    prefix : 'cont'
+    body   : '☡'
+  'Fail()':
+    prefix : 'fail'
+    body   : '■'
+  'Return @void();':
+    prefix : 'returnv'
+    body   : '⌽'
