@@ -1,11 +1,7 @@
 name      : 'Howl'
-
 scopeName : 'source.howl'
-
 type      : 'tree-sitter'
-
 parser    : 'tree-sitter-howl'
-
 fileTypes : ['howl']
 
 scopes:
