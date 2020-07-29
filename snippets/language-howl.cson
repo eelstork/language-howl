@@ -164,18 +164,12 @@
   'String':
     prefix : 'string'
     body   : 'ㄹ'
-  'Get =>':
-    prefix : 'get'
-    body   : '⇖ '
-  'Set =>':
-    prefix : 'set'
-    body   : '⇘ '
   'Get':
-    prefix : 'getb'
-    body   : 'get{ $0 }'
+    prefix : 'get'
+    body   : '╭{ $0 } '
   'Set':
-    prefix : 'setb'
-    body   : 'set{ $0 }'
+    prefix : 'set'
+    body   : '╰{ $0 } '
   'True':
     prefix : 'true'
     body   : '✓'
