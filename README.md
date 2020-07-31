@@ -1,5 +1,24 @@
 # Howl notation support in Atom
 
+Howl is a symbolic notation for the C# programming language 〜
+
+```
+‒ ㅇ Encloses(Rep ⧕) → ⦿.b❙ ☰ ⧕.b❙ ? ✗ : ⦿.b.∋(⧕.b);
+```
+
+C# equiv:
+
+```cs
+public bool Encloses(Rep that)
+    => this.b.Length == that.b.Length ? false
+    : this.b.Contains(that.b);
+```
+
+This package provides:
+
+- A set of snippets; C# in, Howl out. For example typing `public partical class` outputs `‒ᴾ ○`
+- Syntax highlighting
+
 ## Development notes
 
 For development this can be cloned to `~/.atom/packages`

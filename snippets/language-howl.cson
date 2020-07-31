@@ -196,7 +196,7 @@
     body   : '⒜'
   'Func<>':
     prefix : 'Func'
-    body   : '𝔽<${0:R}>'
+    body   : '⒡<${0:R}>'
   'Dictionary':
     prefix : 'Dictionary'
     body   : '𝕄'
