@@ -290,6 +290,15 @@
   'Yield return new WaitForSeconds':
     prefix : 'yieldsec'
     body   : '⏰ '
+  'UnityEngine.Debug.Log':
+    prefix : 'log'
+    body   : '🍥($"$0");'
+  'UnityEngine.Debug.LogError':
+    prefix : 'err'
+    body   : '🔺($"$0");'
+  'UnityEngine.Debug.LogWarning':
+    prefix : 'err'
+    body   : '🔸($"$0");'
   'Status':
     prefix : 'status'
     body   : '⑂ '

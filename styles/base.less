@@ -1,14 +1,51 @@
 @import "syntax-variables";
 
+.syntax--entity{
+    color: darken(#8ab, 8%);
+}
+
+.syntax--punctuation.syntax--other{
+
+    color: darken(goldenRod, 5%);
+
+}
+
+.syntax--keyword.syntax--control{
+
+    color: darken(gold, 10%);
+
+}
+
+// --------------------------------------------------
+
+.syntax--bool{
+
+    //font-weight: bold;
+    font-size: 105%;
+
+    &.syntax--true {
+        color: mediumSeaGreen;
+    }
+
+    &.syntax--false {
+        color: lighten(indianRed, 5%);
+    }
+
+}
+
+// --------------------------------------------------
+
 .syntax--keyword.syntax--control.syntax--return {
   .return_kw();
 }
 
 .return_kw() when (luma(@syntax-background-color) > 50%) {
+  font-size: 80%;
   font-weight: bold;
   color: saturate(darken(@syntax-text-color, 10%), 25%);
 }
 
 .return_kw() when (default()) {
+  font-size: 80%;
   color: saturate(lighten(@syntax-text-color, 10%), 25%);
 }

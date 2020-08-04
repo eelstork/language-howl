@@ -10,7 +10,7 @@ scopes:
   op: 'keyword.operator.cs'
   prim: 'keyword.type.cs'
   bt: 'constant.language.al'
-  flow: 'keyword.control.cs'
+  flow: 'keyword.control'
   return: 'keyword.control.return.cs'
   key: 'keyword.other.cs'
   comment: 'comment.cs'
@@ -25,4 +25,23 @@ scopes:
   #
   id: 'entity.name.id'
   type: 'entity.name.type'
-  z: 'punctuation.other.cs'
+  z: 'punctuation.other'
+  #'bool1': {exact: '✗', scopes: 'false'},
+  #'bool2': {exact: '✓', scopes: 'true'},
+  # ----------------------
+  '''
+  "✓"
+  ''': 'bool.true'
+  # ----------------------
+  '''
+  "✗"
+  ''': 'bool.false'
+  # ----------------------
+  '''
+  "{"
+  ''': 'keyword.control'
+  # ----------------------
+  '''
+  "}"
+  ''': 'keyword.control'
+  # ----------------------
