@@ -1,51 +1,75 @@
 @import "syntax-variables";
 
-.syntax--entity{
-    color: darken(#8ab, 8%);
+@li: 0.95;
+@bg: @syntax-background-color;
+@bg-lum: luma(@bg);
+
+// Lowercase identifiers
+.syntax--entity{ color: fade(@syntax-text-color, @li * 100%); }
+
+// Uppercase identifiers
+.syntax--entity.syntax--name.syntax--type.syntax--howl{
+    color: contrast(@bg, mix(skyblue, @syntax-text-color, 90%) * @li,
+                         black);
 }
 
+// Braces, parens (and currently, operators)
 .syntax--punctuation.syntax--other{
-
-    color: darken(goldenRod, 5%);
-
+    color: contrast(@bg, goldenrod * @li, darkblue);
 }
 
-.syntax--keyword.syntax--control{
+// Control flow
+.syntax--keyword{
 
-    color: darken(gold, 10%);
+    &.syntax--control{ color: contrast(@bg, gold * @li, red * 0.8); }
 
-}
+    &.syntax--class.syntax--other when (@bg-lum < 50%){
+        color: deeppink;
+        font-size: 105%;
+        font-weight:bold !important;
+        padding-bottom: 4px;
+        border-bottom: 20px solid mix(firebrick, @bg, 70%);
+    }
 
-// --------------------------------------------------
+    &.syntax--class.syntax--other when (@bg-lum > 50%){
+        color: tomato;
+        font-size:110%  !important;
+        border-bottom: 5px solid salmon;
+    }
 
+}  // end syntax--keyword
+
+// Type modifiers
+.syntax--storage{
+
+    &.syntax--modifier when (@bg-lum > 50%){
+        color: red;
+        padding: 2px;
+        background-color: darken(@bg, 3%);
+        padding-bottom: 4px;
+        border-top: 15px solid darken(@bg, 10%);;
+    }
+
+    &.syntax--modifier when (@bg-lum < 50%){
+        color: dodgerblue;
+        padding: 2px;
+        background-color: mix(darkblue, @bg, 10%);
+        padding-bottom: 4px;
+        border-bottom: 21px solid mix(salmon, @bg, 15%);;
+    }
+
+}  // end syntax--storage
+
+// ✓ and ✗
 .syntax--bool{
 
-    //font-weight: bold;
     font-size: 105%;
-
-    &.syntax--true {
-        color: mediumSeaGreen;
-    }
-
-    &.syntax--false {
-        color: lighten(indianRed, 5%);
-    }
+    &.syntax--true  { color: contrast(@bg, mediumSeaGreen, green); }
+    &.syntax--false { color: contrast(@bg, indianred, red); }
 
 }
 
-// --------------------------------------------------
-
+// The 'return' keyword
 .syntax--keyword.syntax--control.syntax--return {
-  .return_kw();
-}
-
-.return_kw() when (luma(@syntax-background-color) > 50%) {
-  font-size: 80%;
-  font-weight: bold;
-  color: saturate(darken(@syntax-text-color, 10%), 25%);
-}
-
-.return_kw() when (default()) {
-  font-size: 80%;
-  color: saturate(lighten(@syntax-text-color, 10%), 25%);
+  color: contrast(@bg, desaturate(gold*@li, 75%)*1.8, red);
 }
