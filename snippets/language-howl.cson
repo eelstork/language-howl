@@ -89,6 +89,9 @@
   'While':
     prefix : 'while'
     body   : '⟲ '
+  'Continue;':
+    prefix : 'continue'
+    body   : '⤒'
   'Switch':
     prefix : 'switch'
     body   : '⤭ '
@@ -164,6 +167,12 @@
   'String':
     prefix : 'string'
     body   : 'ㄹ'
+  'Object':
+    prefix : 'object'
+    body   : '⊡'
+  'Double':
+    prefix : 'double'
+    body   : 'ㅆ'
   'Get':
     prefix : 'get'
     body   : '╭{ $0 } '
@@ -191,6 +200,9 @@
   'Void':
     prefix : 'void'
     body   : '┈ '
+  'Params':
+    prefix : 'params'
+    body   : '⋯ '
   'Action<>':
     prefix : 'Action'
     body   : '⒜'
@@ -259,7 +271,7 @@
     body   : 'エ'
   'Quaternion':
     prefix : 'Quaternion'
-    body   : 'ペ'
+    body   : 'ᇅ'
   'Vector2':
     prefix : 'v2'
     body   : 'フ'

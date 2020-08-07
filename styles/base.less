@@ -4,13 +4,15 @@
 @bg: @syntax-background-color;
 @bg-lum: luma(@bg);
 
+// Ref: https://www.rapidtables.com/web/css/css-color.html
+
 // Lowercase identifiers
 .syntax--entity{ color: fade(@syntax-text-color, @li * 100%); }
 
 // Uppercase identifiers
 .syntax--entity.syntax--name.syntax--type.syntax--howl{
-    color: contrast(@bg, mix(skyblue, @syntax-text-color, 90%) * @li,
-                         black);
+    color: contrast(@bg,
+        desaturate(#268bd2, 15%) * 1.2, black);
 }
 
 // Braces, parens (and currently, operators)
@@ -23,18 +25,17 @@
 
     &.syntax--control{ color: contrast(@bg, gold * @li, red * 0.8); }
 
+    &.syntax--class.syntax--other when (@bg-lum > 50%){
+        color: tomato;
+        font-size:100%  !important;
+        border-bottom: 5px solid salmon;
+    }
+
     &.syntax--class.syntax--other when (@bg-lum < 50%){
         color: deeppink;
         font-size: 105%;
         font-weight:bold !important;
-        padding-bottom: 4px;
-        border-bottom: 20px solid mix(firebrick, @bg, 70%);
-    }
-
-    &.syntax--class.syntax--other when (@bg-lum > 50%){
-        color: tomato;
-        font-size:110%  !important;
-        border-bottom: 5px solid salmon;
+        border-bottom: 3px solid tomato;
     }
 
 }  // end syntax--keyword
@@ -43,11 +44,10 @@
 .syntax--storage{
 
     &.syntax--modifier when (@bg-lum > 50%){
-        color: red;
+        color: salmon;
         padding: 2px;
         background-color: darken(@bg, 3%);
-        padding-bottom: 4px;
-        border-top: 15px solid darken(@bg, 10%);;
+        border-right: 3px solid skyblue;
     }
 
     &.syntax--modifier when (@bg-lum < 50%){
@@ -55,7 +55,7 @@
         padding: 2px;
         background-color: mix(darkblue, @bg, 10%);
         padding-bottom: 4px;
-        border-bottom: 21px solid mix(salmon, @bg, 15%);;
+        border-right: 3px solid maroon;
     }
 
 }  // end syntax--storage
