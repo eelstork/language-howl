@@ -16,7 +16,7 @@ public bool Encloses(Rep that)
 
 This package provides:
 
-- A set of snippets; C# in, Howl out. For example typing `public partical class` outputs `‒ᴾ ○`
+- A set of snippets; C# in, Howl out. For example typing `public partial class` outputs `‒ᴾ ○`
 - Syntax highlighting
 
 ## Development notes
