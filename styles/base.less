@@ -7,7 +7,9 @@
 // Ref: https://www.rapidtables.com/web/css/css-color.html
 
 // Lowercase identifiers
-.syntax--entity{ color: fade(@syntax-text-color, @li * 100%); }
+.syntax--entity{
+    color: mix(beige, @syntax-text-color, 30%)*@li;
+}
 
 // Uppercase identifiers
 .syntax--entity.syntax--name.syntax--type.syntax--howl{
@@ -20,10 +22,20 @@
     color: contrast(@bg, goldenrod * @li, darkblue);
 }
 
-// Control flow
+// Control flow and primitive types
 .syntax--keyword{
 
     &.syntax--control{ color: contrast(@bg, gold * @li, red * 0.8); }
+
+    //
+    &.syntax--type.syntax--howl{
+        color: contrast(@bg, salmon * @li, indigo);
+        // Adjusted to match stoppers to the right
+        // -ᆨ-ᆩ+ᅮ+ᆞ-ᅭ-ㅅ-ㅆ-ㄹ|
+        // ...|...|...|....|
+        margin-left: -0.132em;
+        margin-right: -0.132em;
+    }
 
     &.syntax--class.syntax--other when (@bg-lum > 50%){
         color: tomato;

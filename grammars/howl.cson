@@ -8,7 +8,7 @@ scopes:
   mod: 'storage.modifier.howl'
   cat: 'keyword.other.class.cs'
   op: 'keyword.operator.cs'
-  prim: 'keyword.type.cs'
+  prim: 'keyword.type.howl'
   bt: 'constant.language.al'
   flow: 'keyword.control'
   return: 'keyword.control.return.cs'

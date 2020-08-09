@@ -134,6 +134,15 @@
   'Select':
     prefix : 'select'
     body   : '፥ '
+  'Orderby':
+    prefix : 'orderby'
+    body   : '⏢ '
+  'Ascending':
+    prefix : 'ascending'
+    body   : '◿ '
+  'Descending':
+    prefix : 'descending'
+    body   : '◺ '
   'as (→)':
     prefix : 'as'
     body   : '→ '
