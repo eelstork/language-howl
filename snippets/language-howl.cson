@@ -11,6 +11,12 @@
   'Class':
     prefix : 'class'
     body   : '○ '
+  'Delegate':
+    prefix : 'delegate'
+    body   : '⍧ '
+  'Enum':
+    prefix : 'enum'
+    body   : '⍥ '
   'Interface':
     prefix : 'interface'
     body   : '◌ '
@@ -49,7 +55,7 @@
     body   : '▰̥ '
   'Abstract':
     prefix : 'abstract'
-    body   : 'ᴬ '
+    body   : '☋ '
   'Const':
     prefix : 'const'
     body   : 'ᴸ '
@@ -59,6 +65,9 @@
   'Partial':
     prefix : 'partial'
     body   : 'ᴾ '
+  'Readonly':
+    prefix : 'readonly'
+    body   : '⌷ '
   'Static':
     prefix : 'static'
     body   : '∘ '
@@ -91,7 +100,7 @@
     body   : '⟲ '
   'Continue;':
     prefix : 'continue'
-    body   : '⤒'
+    body   : '⤓'
   'Switch':
     prefix : 'switch'
     body   : '⤭ '
@@ -125,54 +134,72 @@
   'Select':
     prefix : 'select'
     body   : '፥ '
-  'As (=>)':
+  'as (→)':
     prefix : 'as'
     body   : '→ '
-  'Eq':
-    prefix : 'eq'
+  'equals (☰)':
+    prefix : 'equals'
     body   : '☰ '
-  'NEq':
-    prefix : 'neq'
+  'unequals (≠)':
+    prefix : 'unequals'
     body   : '≠ '
-  'GEq':
-    prefix : 'geq'
+  'greater or equals (≥)':
+    prefix : 'greatero'
     body   : '≥ '
-  'LEq':
-    prefix : 'leq'
+  'lesser or equals (≤)':
+    prefix : 'lessero'
     body   : '≤ '
-  'And':
+  'and (∧)':
     prefix : 'and'
     body   : '∧ '
-  'Or':
+  'or (∨)':
     prefix : 'or'
     body   : '∨ '
   'Operator':
     prefix : 'operator'
-    body   : '⨕ '
-  'Explicit':
+    body   : '⨕ ${1:⨀} ($2) '
+  'Explicit type conversion':
     prefix : 'explicit'
-    body   : 'ᵉ '
-  'Implicit':
+    body   : '⒠ $1($2 ⧕) '
+  'Implicit type conversion':
     prefix : 'implicit'
-    body   : 'ⁱ '
+    body   : '⒤ $1($2 ⧕) '
   'Bool':
     prefix : 'bool'
     body   : 'ㅇ'
-  'Float':
-    prefix : 'float'
-    body   : 'ㅅ'
+  'Byte':
+    prefix : 'byte'
+    body   : 'ᆨ'
+  'Char':
+    prefix : 'char'
+    body   : 'ᆩ'
+  'Short':
+    prefix : 'short'
+    body   : 'ᅮ'
   'Int':
     prefix : 'int'
     body   : 'ᆞ'
+  'Long':
+    prefix : 'long'
+    body   : 'ᅭ'
+  'Float':
+    prefix : 'float'
+    body   : 'ㅅ'
+  'Double':
+    prefix : 'double'
+    body   : 'ㅆ'
+  'Decimal':
+    prefix : 'decimal'
+    body   : 'ᄍ'
   'String':
     prefix : 'string'
     body   : 'ㄹ'
   'Object':
     prefix : 'object'
     body   : '⊡'
-  'Double':
-    prefix : 'double'
-    body   : 'ㅆ'
+  'Var':
+    prefix : 'var'
+    body   : '∙ '
   'Get':
     prefix : 'get'
     body   : '╭{ $0 } '
@@ -188,9 +215,6 @@
   'New':
     prefix : 'new'
     body   : '⌢ '
-  'Var':
-    prefix : 'var'
-    body   : '∙ '
   'Null':
     prefix : 'null'
     body   : '∅'
@@ -215,9 +239,21 @@
   'HashSet':
     prefix : 'HashSet'
     body   : '𝕊'
+  'IEnumerator':
+    prefix : 'IEnumerator'
+    body   : '𝔼'
   'List':
     prefix : 'List'
     body   : '𝕃'
+  'Sqrt':
+    prefix : 'Sqrt'
+    body   : '√'
+  'Sum':
+    prefix : 'Sum'
+    body   : '∑'
+  'Pi (3.14...)':
+    prefix : 'pi3'
+    body   : '𝛑'
   'Append':
     prefix : 'Append'
     body   : '±'
@@ -227,6 +263,9 @@
   'ContainsKey':
     prefix : 'ContainsKey'
     body   : '⋺'
+  'Exists':
+    prefix : 'Exists'
+    body   : '∃'
   'That':
     prefix : 'that'
     body   : '⧕'
@@ -245,9 +284,21 @@
   '.ToArray()':
     prefix : 'ToArray'
     body   : '৴'
+  '.Value':
+    prefix : 'Value'
+    body   : 'ᖾ'
   '(this,':
     prefix : 'xargs'
     body   : '【$0)'
+  'Log.message =':
+    prefix : 'logm'
+    body   : '🐰 '
+  'Log.warning =':
+    prefix : 'logw'
+    body   : '🐤 '
+  'Log.error =':
+    prefix : 'loge'
+    body   : '🦞 '
   '[Test] public void':
     prefix : 'test'
     body   : '؟ '
@@ -309,7 +360,7 @@
     prefix : 'err'
     body   : '🔺($"$0");'
   'UnityEngine.Debug.LogWarning':
-    prefix : 'err'
+    prefix : 'warn'
     body   : '🔸($"$0");'
   'Status':
     prefix : 'status'

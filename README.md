@@ -31,3 +31,5 @@ apm install
 ```
 
 Use `⌘ + SHIFT + P` and `rel` to reload the package.
+
+When all good `apm publish` (automatically pushes)
