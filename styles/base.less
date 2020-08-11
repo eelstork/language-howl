@@ -25,12 +25,32 @@
 // Control flow and primitive types
 .syntax--keyword{
 
-    &.syntax--control{ color: contrast(@bg, gold * @li, red * 0.8); }
+    &.syntax--control{
 
-    //
+        color: contrast(@bg, gold * @li, red * 0.8);
+
+        &.syntax--return{
+            //padding-left: 3px;
+            //border-left: 3px dotted
+            //              mix(@syntax-text-color, @bg, 35%);
+
+            &.syntax--true.syntax--howl  {
+                font-weight:bolder !important;
+                color: contrast(@bg, mediumSeaGreen,
+                                     green * 1.5 + snow * 0.2);
+            }
+            &.syntax--false.syntax--howl {
+                font-weight:bolder !important;
+                color: contrast(@bg, indianred,
+                                     orangered);
+            }
+        }
+
+    }
+
     &.syntax--type.syntax--howl{
         color: contrast(@bg, salmon * @li, indigo);
-        // Adjusted to match stoppers to the right
+        // Adjusted for right vertical bars to match
         // -ᆨ-ᆩ+ᅮ+ᆞ-ᅭ-ㅅ-ㅆ-ㄹ|
         // ...|...|...|....|
         margin-left: -0.132em;

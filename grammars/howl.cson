@@ -26,8 +26,14 @@ scopes:
   id: 'entity.name.id'
   type: 'entity.name.type.howl'
   z: 'punctuation.other'
-  #'bool1': {exact: '✗', scopes: 'false'},
-  #'bool2': {exact: '✓', scopes: 'true'},
+  # ----------------------
+  '''
+  "㆑"
+  ''': 'keyword.control.return.true.howl'
+  # ----------------------
+  '''
+  "⤬"
+  ''': 'keyword.control.return.false.howl'
   # ----------------------
   '''
   "✓"

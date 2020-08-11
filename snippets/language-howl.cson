@@ -100,7 +100,7 @@
     body   : '⟲ '
   'Continue;':
     prefix : 'continue'
-    body   : '⤓'
+    body   : '〰'
   'Switch':
     prefix : 'switch'
     body   : '⤭ '
@@ -125,6 +125,12 @@
   'Finally':
     prefix : 'finally'
     body   : '(˙▿˙) '
+  'Return true;':
+    prefix : 'tt'
+    body   : '㆑'
+  'Return false;':
+    prefix : 'ff'
+    body   : '⤬'
   'From':
     prefix : 'from'
     body   : '‖ '
