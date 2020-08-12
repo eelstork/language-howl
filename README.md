@@ -1,6 +1,6 @@
 # Howl notation support in Atom
 
-Howl is the symbolic notation for the C# programming. This package provides input support and syntax highligting for Howl in Atom.
+Howl is the symbolic notation for C# programming. This package provides input support and syntax highligting for Howl in Atom.
 
 ## Prerequisites
 
