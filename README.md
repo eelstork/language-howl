@@ -2,7 +2,7 @@
 
 Howl is the symbolic notation for C# programming. This package provides input support and syntax highligting for Howl in Atom.
 
-## Prerequisite
+## Prerequisites
 
 Via node-gyp, this package requires Python and a native C++ toolchain. You may visit the [node-gyp](https://github.com/nodejs/node-gyp) homepage for details but, in short:
 
