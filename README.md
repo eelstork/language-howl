@@ -2,11 +2,15 @@
 
 Howl is the symbolic notation for C# programming. This package provides input support and syntax highligting for Howl in Atom.
 
-## Prerequisites
+## Prerequisite
 
-Windows [DOCUMENT]
-macOS Mojave [DOCUMENT]
-macOS Catalina [DOCUMENT]
+Via node-gyp, this package requires Python and a native C++ toolchain. You may visit the [node-gyp](https://github.com/nodejs/node-gyp) homepage for details but, in short:
+
+- On Windows, Visual Studio community edition (tried 2019, works) with C++ desktop dev workload. Alternatives yet perhaps this is the easy way.
+- GCC on Linux
+- XCode plus `xcode-select --install` in terminal for command line tools.
+
+If you are not able to install the package, please open an issue.
 
 ## Making yourself at ease
 
