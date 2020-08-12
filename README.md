@@ -10,10 +10,9 @@ macOS Catalina [DOCUMENT]
 
 ## Making yourself at ease
 
-If you are using Unity 3D, hiding metafiles and other nonsense may be a good idea.
+- Hiding metafiles and other nonsense may be a good idea.
 Here is a [config template] [ADD] you may use.
-
-Ensure you have selected 'hide ignored names' in the tree-view package (`Atom > [Settings or prefs] > Packages > Tree-view`).
+- Select 'hide ignored names' in the tree-view package (`Atom > [Settings or prefs] > Packages > Tree-view`).
 
 ## For developers
 
