@@ -107,9 +107,15 @@
   'Case':
     prefix : 'case'
     body   : '⥰ '
+  'Default':
+    prefix : 'default'
+    body   : '～ '
   'Break;':
     prefix : 'break'
     body   : '¦'
+  'When':
+    prefix : 'when'
+    body   : '⤏ '
   'Return':
     prefix : 'return'
     body   : '⮐ '
@@ -368,13 +374,13 @@
   'Yield return new WaitForSeconds':
     prefix : 'yieldsec'
     body   : '⏰ '
-  'UnityEngine.Debug.Log':
+  'That.Logger.Log':
     prefix : 'log'
     body   : '🍥($"$0");'
-  'UnityEngine.Debug.LogError':
+  'That.Logger.Err':
     prefix : 'err'
     body   : '🔺($"$0");'
-  'UnityEngine.Debug.LogWarning':
+  'That.Logger.Warn':
     prefix : 'warn'
     body   : '🔸($"$0");'
   'Status':
