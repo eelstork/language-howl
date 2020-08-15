@@ -1,27 +1,26 @@
 # Howl notation support in Atom
 
-Howl is a symbolic notation for the C# programming language 〜
+Howl is the symbolic notation for C# programming. This package provides input support and syntax highligting for Howl in Atom.
 
-```
-‒ ㅇ Encloses(Rep ⧕) → ⦿.b❙ ☰ ⧕.b❙ ? ✗ : ⦿.b.∋(⧕.b);
-```
+## Prerequisites
 
-C# equiv:
+Via node-gyp, this package requires Python and a native C++ toolchain. You may visit the [node-gyp](https://github.com/nodejs/node-gyp) homepage for details but, in short:
 
-```cs
-public bool Encloses(Rep that)
-    => this.b.Length == that.b.Length ? false
-    : this.b.Contains(that.b);
-```
+- On Windows, Visual Studio community edition (tried 2019, works) with C++ desktop dev workload. Alternatives yet perhaps this is the easy way.
+- GCC on Linux
+- XCode plus `xcode-select --install` in terminal for command line tools.
 
-This package provides:
+If you are not able to install the package, please open an issue.
 
-- A set of snippets; C# in, Howl out. For example typing `public partial class` outputs `‒ᴾ ○`
-- Syntax highlighting
+## Making yourself at ease
 
-## Development notes
+- Hiding metafiles and other nonsense may be a good idea.
+Here is a [config template] [ADD] you may use.
+- Select 'hide ignored names' in the tree-view package (`Atom > [Settings or prefs] > Packages > Tree-view`).
 
-For development this can be cloned to `~/.atom/packages`
+## For developers
+
+The package may be cloned to `~/.atom/packages`
 
 After updating the grammar and up to npm, update `tree-sitter-howl` version in `package.json` then:
 
