@@ -7,8 +7,12 @@
 // Ref: https://www.rapidtables.com/web/css/css-color.html
 
 // Lowercase identifiers
-.syntax--entity{
+.syntax--entity when (@bg-lum < 50%){
     color: mix(beige, @syntax-text-color, 30%)*@li;
+}
+
+.syntax--entity when (@bg-lum > 50%){
+    color: mix(darkred, @syntax-text-color, 67%);
 }
 
 // Uppercase identifiers
@@ -77,16 +81,21 @@
 
     &.syntax--modifier when (@bg-lum > 50%){
         color: salmon;
-        padding: 2px;
+        padding-right: 0.35em;
+        padding-left: 0.35em;
         background-color: darken(@bg, 3%);
-        border-right: 3px solid skyblue;
+        border-right: 0.2em solid skyblue;
     }
 
     &.syntax--modifier when (@bg-lum < 50%){
-        color: dodgerblue;
+        color: seagreen;
         padding: 2px;
-        background-color: mix(darkblue, @bg, 10%);
-        border-right: 3px solid maroon;
+        background-color: mix(chocolate, @bg, 10%);
+        padding-right: 0.35em;
+        padding-left: 0.35em;
+        border-right: 0.15em solid mix(tomato, @bg, 50%);
+        //border-left: 0.2em solid mix(black, @bg, 10%);
+
     }
 
 }  // end syntax--storage

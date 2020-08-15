@@ -5,7 +5,7 @@ parser    : 'tree-sitter-howl'
 fileTypes : ['howl']
 
 scopes:
-  mod: 'storage.modifier.howl'
+  modifiers: 'storage.modifier.howl'
   cat: 'keyword.other.class.cs'
   op: 'keyword.operator.cs'
   prim: 'keyword.type.howl'
