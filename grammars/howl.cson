@@ -6,26 +6,26 @@ fileTypes : ['howl']
 
 scopes:
   modifiers: 'storage.modifier.howl'
-  cat: 'keyword.other.class.cs'
+  cat: 'keyword.other.class.howl'
   op: 'keyword.operator.cs'
   prim: 'keyword.type.howl'
   bt: 'constant.language.al'
-  flow: 'keyword.control'
-  return: 'keyword.control.return.cs'
-  key: 'keyword.other.cs'
-  comment: 'comment.cs'
-  z: 'operator.cs'
+  flow: 'keyword.control.howl'
+  return: 'keyword.control.return.howl'
+  key: 'keyword.other.howl'
+  comment: 'comment.howl'
+  z: 'operator.howl'
   #
-  null: 'constant.language.null.cs'
-  bool: 'constant.language.boolean.cs'
-  char: 'string.quoted.single.cs'
-  real: 'constant.numeric.cs'
-  int: 'constant.numeric.cs'
-  str: 'string.quoted.double.cs'
+  null: 'constant.language.null.howl'
+  bool: 'constant.language.boolean.howl'
+  char: 'string.quoted.single.howl'
+  real: 'constant.numeric.howl'
+  int: 'constant.numeric.howl'
+  str: 'string.quoted.double.howl'
   #
-  id: 'entity.name.id'
+  id: 'entity.name.id.howl'
   type: 'entity.name.type.howl'
-  z: 'punctuation.other'
+  z: 'punctuation.other.howl'
   # ----------------------
   '''
   "㆑"
@@ -37,17 +37,17 @@ scopes:
   # ----------------------
   '''
   "✓"
-  ''': 'bool.true'
+  ''': 'bool.true.howl'
   # ----------------------
   '''
   "✗"
-  ''': 'bool.false'
+  ''': 'bool.false.howl'
   # ----------------------
   '''
   "{"
-  ''': 'keyword.control'
+  ''': 'keyword.control.howl'
   # ----------------------
   '''
   "}"
-  ''': 'keyword.control'
+  ''': 'keyword.control.howl'
   # ----------------------

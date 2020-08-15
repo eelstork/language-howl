@@ -4,55 +4,65 @@
 @bg: @syntax-background-color;
 @bg-lum: luma(@bg);
 
+// Root scope avoids language styling collisions
 // Ref: https://www.rapidtables.com/web/css/css-color.html
+.syntax--howl{
 
 // Lowercase identifiers
-.syntax--entity when (@bg-lum < 50%){
-    color: mix(beige, @syntax-text-color, 30%)*@li;
+&.syntax--entity when (@bg-lum < 50%){
+    color: mix(@bg, wheat, 30%)*@li;
 }
-
-.syntax--entity when (@bg-lum > 50%){
+&.syntax--entity when (@bg-lum > 50%){
     color: mix(darkred, @syntax-text-color, 67%);
 }
 
 // Uppercase identifiers
-.syntax--entity.syntax--name.syntax--type.syntax--howl{
-    color: contrast(@bg,
-        desaturate(#268bd2, 15%) * 1.2, black);
+&.syntax--entity.syntax--name.syntax--type{
+    color: contrast(@bg, mix(skyblue, @bg, 75%), black);
 }
 
 // Braces, parens (and currently, operators)
-.syntax--punctuation.syntax--other{
+&.syntax--punctuation.syntax--other{
     color: contrast(@bg, goldenrod * @li, darkblue);
 }
 
-// Control flow and primitive types
-.syntax--keyword{
+&.syntax--keyword{
 
+    // class, struct, interface ...
+    &.syntax--other.syntax--class when (@bg-lum > 50%){
+        color: tomato;
+        font-size:100%  !important;
+        border-bottom: 5px solid salmon;
+    }
+    &.syntax--other.syntax--class when (@bg-lum < 50%){
+        color: deeppink;
+        font-size: 105%;
+        font-weight:bold !important;
+        border-bottom: 3px solid tomato;
+    }
+
+    // Control flow
     &.syntax--control{
-
         color: contrast(@bg, gold * @li, red * 0.8);
 
         &.syntax--return{
-            //padding-left: 3px;
-            //border-left: 3px dotted
-            //              mix(@syntax-text-color, @bg, 35%);
 
-            &.syntax--true.syntax--howl  {
+            &.syntax--true{
                 font-weight:bolder !important;
                 color: contrast(@bg, mediumSeaGreen,
                                      green * 1.5 + snow * 0.2);
             }
-            &.syntax--false.syntax--howl {
+            &.syntax--false{
                 font-weight:bolder !important;
-                color: contrast(@bg, indianred,
-                                     orangered);
+                color: contrast(@bg, indianred, orangered);
             }
-        }
 
-    }
+        }  // end-return
 
-    &.syntax--type.syntax--howl{
+    }  // end-control
+
+    // Primitive types
+    &.syntax--type{
         color: contrast(@bg, salmon * @li, indigo);
         // Adjusted for right vertical bars to match
         // -ᆨ-ᆩ+ᅮ+ᆞ-ᅭ-ㅅ-ㅆ-ㄹ|
@@ -61,23 +71,10 @@
         margin-right: -0.132em;
     }
 
-    &.syntax--class.syntax--other when (@bg-lum > 50%){
-        color: tomato;
-        font-size:100%  !important;
-        border-bottom: 5px solid salmon;
-    }
-
-    &.syntax--class.syntax--other when (@bg-lum < 50%){
-        color: deeppink;
-        font-size: 105%;
-        font-weight:bold !important;
-        border-bottom: 3px solid tomato;
-    }
-
-}  // end syntax--keyword
+}  // end-keyword
 
 // Type modifiers
-.syntax--storage{
+&.syntax--storage{
 
     &.syntax--modifier when (@bg-lum > 50%){
         color: salmon;
@@ -94,22 +91,22 @@
         padding-right: 0.35em;
         padding-left: 0.35em;
         border-right: 0.15em solid mix(tomato, @bg, 50%);
-        //border-left: 0.2em solid mix(black, @bg, 10%);
-
     }
 
-}  // end syntax--storage
+}  // end-storage
 
 // ✓ and ✗
 .syntax--bool{
-
     font-size: 105%;
+
     &.syntax--true  { color: contrast(@bg, mediumSeaGreen, green); }
     &.syntax--false { color: contrast(@bg, indianred, red); }
 
 }
 
 // The 'return' keyword
-.syntax--keyword.syntax--control.syntax--return {
+.syntax--keyword.syntax--control.syntax--return{
   color: contrast(@bg, desaturate(gold*@li, 75%)*1.8, red);
 }
+
+} // end-howl
