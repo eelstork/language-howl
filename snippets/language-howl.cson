@@ -13,13 +13,13 @@
     body   : '○ '
   'Delegate':
     prefix : 'delegate'
-    body   : '⍧ '
+    body   : '𐋆 '
   'Enum':
     prefix : 'enum'
     body   : '⍥ '
   'Interface':
     prefix : 'interface'
-    body   : '◌ '
+    body   : '𐋂 '
   'Struct':
     prefix : 'struct'
     body   : '⊟ '
@@ -31,10 +31,10 @@
     body   : '◠ '
   'Internal':
     prefix : 'internal'
-    body   : '╌ '
+    body   : '︲ '
   'Protected internal':
     prefix : 'pri'
-    body   : '╍ '
+    body   : '︲̑ '
   'Private':
     prefix : 'private'
     body   : '▰ '
@@ -44,12 +44,12 @@
   'Protected static':
     prefix : 'prs'
     body   : '◠̥ '
-  '⊐̥':
+  'Internal static':
     prefix : 'is'
-    body   : '╌̥ '
+    body   : '︲̥ '
   'Protected internal static':
     prefix : 'pris'
-    body   : '╍̥ '
+    body   : '︲̥̑ '
   'Private static':
     prefix : 'pvs'
     body   : '▰̥ '
