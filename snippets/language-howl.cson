@@ -1,10 +1,10 @@
 '.source.howl':
-  'Using static':
-    prefix : 'usings'
-    body   : '⊐̥ '
   'Using':
     prefix : 'using'
     body   : '⊐ '
+  'Using static':
+    prefix : 'usings'
+    body   : '⊐̥ '
   'Namespace':
     prefix : 'namespace'
     body   : '⊓ '
@@ -145,7 +145,7 @@
     body   : '¿ '
   'Select':
     prefix : 'select'
-    body   : '፥ '
+    body   : '▸ '
   'Orderby':
     prefix : 'orderby'
     body   : '⏢ '
