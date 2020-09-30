@@ -137,6 +137,9 @@
   'Return false;':
     prefix : 'ff'
     body   : '⤬'
+  'Return null;':
+    prefix : 'nn'
+    body   : '⏂'
   'From':
     prefix : 'from'
     body   : '‖ '
@@ -263,6 +266,9 @@
   'Queue':
     prefix : 'Queue'
     body   : 'ℚ'
+  'Stack':
+    prefix : 'Stack'
+    body   : '𝕂'
   'IEnumerator':
     prefix : 'IEnumerator'
     body   : '𝔼'
