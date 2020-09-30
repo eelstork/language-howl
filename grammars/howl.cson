@@ -36,7 +36,7 @@ scopes:
   ''': 'keyword.control.return.false.howl'
   # ----------------------
   '''
-  "⤬"
+  "⏂"
   ''': 'keyword.control.return.null.howl'
   # ----------------------
   '''
