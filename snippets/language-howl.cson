@@ -260,9 +260,15 @@
   'HashSet':
     prefix : 'HashSet'
     body   : '𝕊'
+  'Queue':
+    prefix : 'Queue'
+    body   : 'ℚ'
   'IEnumerator':
     prefix : 'IEnumerator'
     body   : '𝔼'
+  'IEnumerable':
+    prefix : 'IEnumerable'
+    body   : '‡'
   'List':
     prefix : 'List'
     body   : '𝕃'
