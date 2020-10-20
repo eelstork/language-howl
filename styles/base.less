@@ -64,10 +64,6 @@
                 font-weight:bolder !important;
                 color: contrast(@bg, papayawhip, indigo);
             }
-            &.syntax--status.syntax--fail{
-                font-weight:bolder !important;
-                color: white;
-            }
 
         }  // end-return
 
@@ -108,7 +104,7 @@
 }  // end-storage
 
 // ✓ and ✗
-.syntax--bool{
+&.syntax--bool{
     font-size: 105%;
 
     &.syntax--true  { color: contrast(@bg, mediumSeaGreen, green); }
@@ -121,10 +117,21 @@
   color: contrast(@bg, desaturate(gold*@li, 75%)*1.8, red);
 }
 
+// =====================================================
+
+.syntax--vec{
+    font-size: 105%;
+
+    &.syntax--x  { color: salmon; }
+    &.syntax--y  { color: seagreen; }
+    &.syntax--z  { color: dodgerblue; }
+
+}
+
 // Active Logic ========================================
 
 // status constants
-/*
+
 .syntax--status{
     font-size: 105%;
 
@@ -133,5 +140,5 @@
     &.syntax--cont { color: contrast(@bg, deepskyblue, dodgerblue); }
 
 }
-*/
+
 } // end-howl

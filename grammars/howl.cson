@@ -27,9 +27,9 @@ scopes:
   type: 'entity.name.type.howl'
   z: 'punctuation.other.howl'
   # ----------------------
- # '''
- # "㆑"
- # ''': 'keyword.control.return.true.howl'
+  '''
+  "㆑"
+  ''': 'keyword.control.return.true.howl'
   # ----------------------
   '''
   "⤬"
@@ -40,8 +40,8 @@ scopes:
   ''': 'keyword.control.return.null.howl'
   # ----------------------
   '''
-  "Ⅳ"
-  ''': 'keyword.control.yield.howl'
+  "⟆"
+  ''': 'keyword.control.yield_return_null.howl'
   # ----------------------
   '''
   "✓"
@@ -58,6 +58,30 @@ scopes:
   '''
   "}"
   ''': 'keyword.control.howl'
+  # ----------------------
+  '''
+  "⫫"
+  ''': 'vec.z.forward.howl'
+  # ----------------------
+  '''
+  "⫪"
+  ''': 'vec.z.back.howl'
+  # ----------------------
+  '''
+  "⊢"
+  ''': 'vec.x.right.howl'
+  # ----------------------
+  '''
+  "⊣"
+  ''': 'vec.x.left.howl'
+  # ----------------------
+  '''
+  "⊥"
+  ''': 'vec.y.up.howl'
+  # ----------------------
+  '''
+  "⊤"
+  ''': 'vec.y.down.howl'
 
  # Active Logic =====================================================
 
@@ -75,16 +99,16 @@ scopes:
   ''': 'status.cont.howl'
   # ----------------------
   '''
-  "☡̠"
-  ''': 'keyword.control.return.status.cont.howl'
+  "☡̱"
+  ''': 'status.cont.howl'
   # ----------------------
   '''
   "◇̠"
-  ''': 'keyword.control.return.status.done.howl'
+  ''': 'status.done.howl'
   # ----------------------
   '''
   "■̠"
-  ''': 'keyword.control.return.status.fail.howl'
+  ''': 'status.fail.howl'
   # ----------------------
   '''
   "⌽"

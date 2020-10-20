@@ -314,18 +314,12 @@
   'Mass':
     prefix : 'mass'
     body   : '𝓂'
-  'Position':
-    prefix : 'position'
-    body   : '𝓅'
   'Speed':
     prefix : 'speed'
     body   : '𝝇'
   'NominalSpeed':
     prefix : 'nominalSpeed'
     body   : '𝑠̱'
-  'Rotation':
-    prefix : 'rotation'
-    body   : '𝓇'
   'That':
     prefix : 'that'
     body   : '⧕'
@@ -396,23 +390,23 @@
     prefix : 'transform'
     body   : 'み'
   '.position':
-    prefix : 'pposition'
+    prefix : 'position'
     body   : '˙'
   '.rotation':
-    prefix : 'rrotation'
+    prefix : 'rotation'
     body   : '⁰'
-  '.localScale':
-    prefix : 'sscale'
-    body   : 'ˢ'
-  '.transform.localRotation':
-    prefix : 'localRotation'
-    body   : 'ʳ'
-  '.transform.localPosition':
-    prefix : 'localPosition'
-    body   : 'ᵖ'
   '.lossyScale':
     prefix : 'lossyScale'
-    body   : 'ˡ'
+    body   : 'ˢ'
+  'LocalScale':
+    prefix : 'localScale'
+    body   : '𝚜'
+  'LocalRotation':
+    prefix : 'localRotation'
+    body   : '𝚛'
+  'LocalPosition':
+    prefix : 'localPosition'
+    body   : '𝚙'
   'Quaternion':
     prefix : 'Quaternion'
     body   : 'ᇅ'
@@ -483,8 +477,8 @@
     prefix : 'yieldsec'
     body   : '⏰ '
   'Yield return null;':
-    prefix : 'yieldnn'
-    body   : '⩶ '
+    prefix : 'yy'
+    body   : '⟆ '
   'That.Logger.Log':
     prefix : 'log'
     body   : '🍥($"$0");'
