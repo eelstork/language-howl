@@ -179,6 +179,9 @@
   'or (∨)':
     prefix : 'or'
     body   : '∨ '
+  'mul':
+    prefix : 'mul'
+    body   : 'ᐧ '
   'Operator':
     prefix : 'operator'
     body   : '⨕ ${1:⨀} ($2) '
