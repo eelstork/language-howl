@@ -252,7 +252,7 @@
     prefix : 'params'
     body   : '⋯ '
   'Action<>':
-    prefix : 'Action'
+    prefix : 'act'
     body   : '⒜'
   'Func<>':
     prefix : 'Func'
@@ -299,9 +299,48 @@
   'Exists':
     prefix : 'Exists'
     body   : '∃'
+  'Acceleration':
+    prefix : 'acceleration'
+    body   : '𝚊'
+  'NominalAcceleration':
+    prefix : 'nominalAcceleration'
+    body   : '𝚊̱'
+  'Density':
+    prefix : 'density'
+    body   : '𝒹'
+  'Force':
+    prefix : 'force'
+    body   : '𝐹'
+  'Mass':
+    prefix : 'mass'
+    body   : '𝓂'
+  'Position':
+    prefix : 'position'
+    body   : '𝓅'
+  'Speed':
+    prefix : 'speed'
+    body   : '𝝇'
+  'NominalSpeed':
+    prefix : 'nominalSpeed'
+    body   : '𝑠̱'
+  'Rotation':
+    prefix : 'rotation'
+    body   : '𝓇'
   'That':
     prefix : 'that'
     body   : '⧕'
+  'Target':
+    prefix : 'target'
+    body   : '◍'
+  'Torque':
+    prefix : 'torque'
+    body   : '𝜏'
+  'Traction':
+    prefix : 'traction'
+    body   : '𝓽'
+  'Velocity':
+    prefix : 'velocity'
+    body   : '𝓋'
   'Do':
     prefix : 'do'
     body   : '⎚ '
@@ -351,8 +390,29 @@
     prefix : 'Component'
     body   : '⫙'
   'Transform':
-    prefix : 'Transform'
+    prefix : 'ttype'
     body   : 'エ'
+  'Transform identifier':
+    prefix : 'transform'
+    body   : 'み'
+  '.position':
+    prefix : 'pposition'
+    body   : '˙'
+  '.rotation':
+    prefix : 'rrotation'
+    body   : '⁰'
+  '.localScale':
+    prefix : 'sscale'
+    body   : 'ˢ'
+  '.transform.localRotation':
+    prefix : 'localRotation'
+    body   : 'ʳ'
+  '.transform.localPosition':
+    prefix : 'localPosition'
+    body   : 'ᵖ'
+  '.lossyScale':
+    prefix : 'lossyScale'
+    body   : 'ˡ'
   'Quaternion':
     prefix : 'Quaternion'
     body   : 'ᇅ'
@@ -369,11 +429,47 @@
     prefix : 'p2'
     body   : 'ト'
   'Point3':
-    prefix : 'Vector3'
+    prefix : 'Point3'
     body   : 'メ'
   'Point4':
     prefix : 'p4'
     body   : 'メ̂'
+  'time':
+    prefix : 'time'
+    body   : '⒯'
+  'deltaTime':
+    prefix : 'deltaTime'
+    body   : '𝛿𝚝'
+  'Left':
+    prefix : 'left'
+    body   : '⊣'
+  'Right':
+    prefix : 'right'
+    body   : '⊢'
+  'Up':
+    prefix : 'up'
+    body   : '⊥'
+  'Down':
+    prefix : 'down'
+    body   : '⊤'
+  'Forward':
+    prefix : 'forward'
+    body   : '⫫'
+  'Back':
+    prefix : 'back'
+    body   : '⫪'
+  'Center':
+    prefix : 'center'
+    body   : '⟛'
+  '.normalized':
+    prefix : 'normalized'
+    body   : '¹'
+  '.magnitude':
+    prefix : 'magnitude'
+    body   : '❚'
+  '.gameObject.name':
+    prefix : 'gameObjectn'
+    body   : 'ˮ'
   'AddComponent':
     prefix : 'AddComponent'
     body   : '《$0》'
@@ -386,6 +482,9 @@
   'Yield return new WaitForSeconds':
     prefix : 'yieldsec'
     body   : '⏰ '
+  'Yield return null;':
+    prefix : 'yieldnn'
+    body   : '⩶ '
   'That.Logger.Log':
     prefix : 'log'
     body   : '🍥($"$0");'
@@ -398,12 +497,9 @@
   'Status':
     prefix : 'status'
     body   : '⑂ '
-  'Public action':
-    prefix : 'publica'
+  'Action':
+    prefix : 'action'
     body   : '▷ '
-  'Private action':
-    prefix : 'privatea'
-    body   : '▶ '
   'Done()':
     prefix : 'done'
     body   : '◇'
@@ -413,6 +509,18 @@
   'Fail()':
     prefix : 'fail'
     body   : '■'
+  'Return done();':
+    prefix : 'dd'
+    body   : '◇̠'
+  'Return cont();':
+    prefix : 'cc'
+    body   : '☡̱'
+  'Return fail();':
+    prefix : 'ff'
+    body   : '■̠'
   'Return @void();':
     prefix : 'returnv'
     body   : '⌽'
+  'Once()?[':
+    prefix : 'Once'
+    body   : '❰$0❱'

@@ -45,6 +45,10 @@
     &.syntax--control{
         color: contrast(@bg, gold * @li, red * 0.8);
 
+        &.syntax--yield{
+            color: red;
+        }
+
         &.syntax--return{
 
             &.syntax--true{
@@ -59,6 +63,10 @@
             &.syntax--null{
                 font-weight:bolder !important;
                 color: contrast(@bg, papayawhip, indigo);
+            }
+            &.syntax--status.syntax--fail{
+                font-weight:bolder !important;
+                color: white;
             }
 
         }  // end-return
@@ -113,4 +121,17 @@
   color: contrast(@bg, desaturate(gold*@li, 75%)*1.8, red);
 }
 
+// Active Logic ========================================
+
+// status constants
+/*
+.syntax--status{
+    font-size: 105%;
+
+    &.syntax--done  { color: contrast(@bg, mediumSeaGreen, green); }
+    &.syntax--fail { color: contrast(@bg, indianred, red); }
+    &.syntax--cont { color: contrast(@bg, deepskyblue, dodgerblue); }
+
+}
+*/
 } // end-howl
