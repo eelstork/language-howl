@@ -437,6 +437,12 @@
   'deltaTime':
     prefix : 'deltaTime'
     body   : '𝛿𝚝'
+  'Mathf.Deg2Rad':
+    prefix : 'radians'
+    body   : '∠ʳ'
+  'Mathf.Rad2Deg':
+    prefix : 'degrees'
+    body   : '∠°'
   'Left':
     prefix : 'left'
     body   : '⊣'
