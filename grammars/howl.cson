@@ -107,9 +107,69 @@ scopes:
   ''': 'status.done.howl'
   # ----------------------
   '''
+  "⑂"
+  ''': 'status.howl'
+  # ----------------------
+  '''
   "■̠"
   ''': 'status.fail.howl'
   # ----------------------
   '''
+  "⨴"
+  ''': 'status.impending.howl'
+  # ----------------------
+  '''
+  "⨮"
+  ''': 'status.pending.howl'
+  # ----------------------
+  '''
+  "▷"
+  ''': 'status.action.howl'
+  # ----------------------
+  '''
+  "ⓧ"
+  ''': 'status.failure.howl'
+  # ----------------------
+  '''
+  "𝟾"
+  ''': 'status.loop.howl'
+  # ----------------------
+  '''
+  "ꜝ"
+  ''': 'certainty.now.howl'
+  # ----------------------
+  '''
+  "ʾ"
+  ''': 'certainty.due.howl'
+  # ----------------------
+  '''
+  "ʿ"
+  ''': 'certainty.undue.howl'
+  # ----------------------
+  '''
+  "ᴼ"
+  ''': 'certainty.ever.howl'
+  # ----------------------
+  '''
+  "ˣ"
+  ''': 'certainty.fail.howl'
+  # ----------------------
+  '''
   "⌽"
   ''': 'keyword.control.return.status.void.howl'
+  # ----------------------
+  '''
+  "⸨"
+  ''': 'punctuation.other.howl'
+  # ----------------------
+  '''
+  "⸩"
+  ''': 'punctuation.other.howl'
+  # ----------------------
+  '''
+  "⁅"
+  ''': 'punctuation.other.howl'
+  # ----------------------
+  '''
+  "⁆"
+  ''': 'punctuation.other.howl'

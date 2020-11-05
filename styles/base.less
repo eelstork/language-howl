@@ -3,6 +3,7 @@
 @li: 0.95;
 @bg: @syntax-background-color;
 @bg-lum: luma(@bg);
+@kw: tomato;
 
 // Root scope avoids language styling collisions
 // Ref: https://www.rapidtables.com/web/css/css-color.html
@@ -133,11 +134,45 @@
 // status constants
 
 .syntax--status{
+
     font-size: 105%;
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+    padding-bottom: 0.15em;
+    background-color: mix(orange, @bg, 10%);
+    border-radius: 0.3em;
+    border: 0.1em solid mix(tomato, @bg, 30%);
+    color: contrast(@bg, lightgray, black);
 
     &.syntax--done  { color: contrast(@bg, mediumSeaGreen, green); }
     &.syntax--fail { color: contrast(@bg, indianred, red); }
     &.syntax--cont { color: contrast(@bg, deepskyblue, dodgerblue); }
+
+    &.syntax--action     { color: mediumSeaGreen; }
+    &.syntax--impending  { color: contrast(@bg, orange, orangered); }
+    &.syntax--pending    { color: contrast(@bg, orange, yellow); }
+    &.syntax--failure    { color: tomato; }
+    &.syntax--loop       { color: skyblue; }
+    &.syntax--now       { color: white; }
+
+}
+
+.syntax--certainty{
+
+    font-size: 105%;
+    //padding-left: 0.2em;
+    //padding-right: 0.2em;
+    //padding-bottom: 0.15em;
+    //background-color: mix(orange, @bg, 10%);
+    //border-radius: 0.3em;
+    //border: 0.1em solid mix(tomato, @bg, 30%);
+    color: contrast(@bg, lightgray, black);
+
+    &.syntax--now   { color: contrast(@bg, white, black); }
+    &.syntax--due   { color: contrast(@bg, lightgreen, darkgreen); }
+    &.syntax--undue { color: tomato; }
+    &.syntax--ever  { color: dodgerblue; }
+    &.syntax--fail  { color: red; }
 
 }
 

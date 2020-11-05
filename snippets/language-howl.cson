@@ -140,6 +140,15 @@
   'Return null;':
     prefix : 'nn'
     body   : '⏂'
+  'Yield return':
+    prefix : 'yr'
+    body   : '⟾ '
+  'Yield break;':
+    prefix : 'yb'
+    body   : '⤇ '
+  'Yield return null;':
+    prefix : 'yy'
+    body   : '⟆ '
   'From':
     prefix : 'from'
     body   : '‖ '
@@ -482,12 +491,12 @@
   '[UnityTest] public IEnumerator':
     prefix : 'utest'
     body   : '⏚ '
+  'If (Skip()) yield break;':
+    prefix : 'opt'
+    body   : '⒪ '
   'Yield return new WaitForSeconds':
     prefix : 'yieldsec'
     body   : '⏰ '
-  'Yield return null;':
-    prefix : 'yy'
-    body   : '⟆ '
   'That.Logger.Log':
     prefix : 'log'
     body   : '🍥($"$0");'
@@ -503,6 +512,27 @@
   'Action':
     prefix : 'action'
     body   : '▷ '
+  'Loop':
+    prefix : 'loop'
+    body   : '𝟾 '
+  'Impending':
+    prefix : 'impending'
+    body   : '⨴ '
+  'Pending':
+    prefix : 'pending'
+    body   : '⨮ '
+  'Failure':
+    prefix : 'failure'
+    body   : 'ⓧ '
+  '.due':
+    prefix : 'due'
+    body   : 'ʾ '
+  '.undue':
+    prefix : 'undue'
+    body   : 'ʿ '
+  '.ever':
+    prefix : 'ever'
+    body   : 'ᴼ '
   'Done()':
     prefix : 'done'
     body   : '◇'
@@ -522,8 +552,46 @@
     prefix : 'ff'
     body   : '■̠'
   'Return @void();':
-    prefix : 'returnv'
+    prefix : 'vvv'
     body   : '⌽'
+  'Return @false();':
+    prefix : 'fff'
+    body   : 'ⓧ̱'
+  'Return loop.cont();':
+    prefix : 'lcc'
+    body   : '𝟾̱'
+  'Return pending.done();':
+    prefix : 'pdd'
+    body   : '◇̠ʾ'
+  'Return pending.cont();':
+    prefix : 'pcc'
+    body   : '☡̱ʾ'
+  'Return impending.cont();':
+    prefix : 'icc'
+    body   : '☡̱ʿ'
+  'Return impending.fail();':
+    prefix : 'iff'
+    body   : '■̠ʿ'
+  'Sequence()':
+    prefix : 'Sequence'
+    body   : '⍈ [ ⩓ $0 : 
+repeat];'
+  'And ?':
+    prefix : 'then'
+    body   : '⩓ '
+  'Selector()':
+    prefix : 'Selector'
+    body   : '⍰ [ ⩔ $0 : 
+repeat];'
+  'Or ?':
+    prefix : 'otherwise'
+    body   : '⩔ '
   'Once()?[':
     prefix : 'Once'
     body   : '❰$0❱'
+  'While(':
+    prefix : 'Drive'
+    body   : '⸨ $1 ≫ $0 ⸩'
+  'Tie(':
+    prefix : 'Tie'
+    body   : '⁅ $1 × $0 ⁆'
