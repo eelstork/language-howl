@@ -396,10 +396,10 @@
     prefix : 'Component'
     body   : '⫙'
   'Transform':
-    prefix : 'ttype'
+    prefix : 'Transform'
     body   : 'エ'
   'Transform identifier':
-    prefix : 'transform'
+    prefix : 'tra'
     body   : 'み'
   '.position':
     prefix : 'position'
@@ -549,7 +549,7 @@
     prefix : 'cc'
     body   : '☡̱'
   'Return fail();':
-    prefix : 'ff'
+    prefix : 'fa'
     body   : '■̠'
   'Return @void();':
     prefix : 'vvv'
