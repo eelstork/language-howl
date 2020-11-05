@@ -574,24 +574,22 @@
     body   : '■̠ʿ'
   'Sequence()':
     prefix : 'Sequence'
-    body   : '⍈ [ ⩓ $0 : 
-repeat];'
+    body   : '⍈ [ ⩓ $1 : ${2:repeat}];'
   'And ?':
     prefix : 'then'
     body   : '⩓ '
   'Selector()':
     prefix : 'Selector'
-    body   : '⍰ [ ⩔ $0 : 
-repeat];'
+    body   : '⍰ [ ⩔ $1 : ${2:repeat}];'
   'Or ?':
     prefix : 'otherwise'
     body   : '⩔ '
   'Once()?[':
     prefix : 'Once'
-    body   : '❰$0❱'
+    body   : '❰$1❱'
   'While(':
     prefix : 'Drive'
-    body   : '⸨ $1 ≫ $0 ⸩'
+    body   : '⸨ $1 ≫ $2 ⸩'
   'Tie(':
     prefix : 'Tie'
-    body   : '⁅ $1 × $0 ⁆'
+    body   : '⁅ $1 × $2 ⁆'
