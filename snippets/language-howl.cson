@@ -572,18 +572,15 @@
   'Return impending.fail();':
     prefix : 'iff'
     body   : '■̠ʿ'
-  'Sequence()':
-    prefix : 'Sequence'
-    body   : '⍈ [ ⩓ $1 : ${2:repeat}];'
-  'And ?':
-    prefix : 'then'
-    body   : '⩓ '
-  'Selector()':
-    prefix : 'Selector'
-    body   : '⍰ [ ⩔ $1 : ${2:repeat}];'
-  'Or ?':
-    prefix : 'otherwise'
-    body   : '⩔ '
+  'Seq':
+    prefix : 'Seq'
+    body   : '⍈() ⟦ $1 ⟧'
+  'Sel':
+    prefix : 'Sel'
+    body   : '⍰() ⟦ $1 ⟧'
+  '% @do?[':
+    prefix : 'task'
+    body   : '⟦ $1 ⟧'
   'Once()?[':
     prefix : 'Once'
     body   : '❰$1❱'
