@@ -22,10 +22,19 @@ scopes:
   real: 'constant.numeric.howl'
   int: 'constant.numeric.howl'
   str: 'string.quoted.double.howl'
+  note: 'string.quoted.note.howl'
   #
   id: 'entity.name.id.howl'
   type: 'entity.name.type.howl'
   z: 'punctuation.other.howl'
+  # ----------------------
+  '''
+  "•"
+  ''': 'keyword.control.logged.howl'
+  # ----------------------
+  '''
+  "。"
+  ''': 'keyword.control.logged.howl'
   # ----------------------
   '''
   "㆑"

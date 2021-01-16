@@ -578,6 +578,12 @@
   'Sel':
     prefix : 'Sel'
     body   : '⍰() ⟦ $1 ⟧'
+  '=> ε(':
+    prefix : 'sx'
+    body   : '•$1。'
+  '[log && $"':
+    prefix : 'nt'
+    body   : '⎨$1⎬'
   '% @do?[':
     prefix : 'task'
     body   : '⟦ $1 ⟧'

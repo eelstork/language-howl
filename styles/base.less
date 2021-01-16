@@ -27,6 +27,11 @@
     color: contrast(@bg, goldenrod * @li, darkblue);
 }
 
+// Braces, parens (and currently, operators)
+&.syntax--string.syntax--quoted.syntax--note{
+    color: mix(@bg, cornflowerblue, 50%);
+}
+
 &.syntax--keyword{
 
     // class, struct, interface ...
@@ -116,6 +121,10 @@
 // The 'return' keyword
 .syntax--keyword.syntax--control.syntax--return{
   color: contrast(@bg, desaturate(gold*@li, 75%)*1.8, red);
+}
+
+.syntax--keyword.syntax--control.syntax--logged{
+  color: mix(@bg, violet, 30%);
 }
 
 // =====================================================
