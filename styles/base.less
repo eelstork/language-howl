@@ -92,11 +92,13 @@
     // Primitive types
     &.syntax--type{
         color: contrast(@bg, salmon * @li, indigo);
-        // Adjusted for right vertical bars to match
-        // -ᆨ-ᆩ+ᅮ+ᆞ-ᅭ-ㅅ-ㅆ-ㄹ|
-        // ...|...|...|....|
-        margin-left: -0.132em;
-        margin-right: -0.132em;
+        &.syntax--hangul{
+            // Adjusted for right vertical bars to match
+            // -ᆨ-ᆩ+ᅮ+ᆞ-ᅭ-ㅅ-ㅆ-ㄹ|
+            // ...|...|...|....|
+            margin-left: -0.132em;
+            margin-right: -0.132em;
+        }
     }
 
 }  // end-keyword
