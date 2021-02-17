@@ -22,6 +22,20 @@
     color: contrast(@bg, mix(skyblue, @bg, 75%), black);
 }
 
+// Instantiate
+&.syntax--entity.syntax--name.syntax--instantiate{
+    color: @bg;
+    padding-right: 0.3em;
+    padding-left: 0.3em;
+    padding-top: 0.0em;
+    padding-bottom: 0.1em;
+    font-size: 105%;
+    background-color: gold;
+    border-radius: 0.3em;
+    margin-right: 0.15em;
+    //border-right: 0.2em solid skyblue;
+}
+
 // Braces, parens (and currently, operators)
 &.syntax--punctuation.syntax--other{
     color: contrast(@bg, goldenrod * @li, darkblue);
@@ -135,6 +149,30 @@
     &.syntax--x  { color: salmon; }
     &.syntax--y  { color: seagreen; }
     &.syntax--z  { color: dodgerblue; }
+
+}
+
+// Normal Signatures ====================================
+
+.syntax--entity{
+
+    font-size: 90%;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+    padding-top: 0.15em;
+    padding-bottom: 0.15em;
+    background-color: mix(orange, @bg, 10%);
+    border-radius: 0.3em;
+
+    color: contrast(@bg, lightgray, black);
+
+    &.syntax--unity{
+        border: 0.1em solid mix(white, @bg, 60%);
+    }
+
+    &.syntax--activelogic{
+        border: 0.1em solid mix(white, @bg, 40%);
+    }
 
 }
 

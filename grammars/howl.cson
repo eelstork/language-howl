@@ -27,6 +27,38 @@ scopes:
   id: 'entity.name.id.howl'
   type: 'entity.name.type.howl'
   z: 'punctuation.other.howl'
+  # Awake --------------
+  '''
+  "ᑍ"
+  ''': 'entity.unity.howl'
+  # Start ---------------
+  '''
+  "ᐅ"
+  ''': 'entity.unity.howl'
+  # Update ---------------
+  '''
+  "ᑐ"
+  ''': 'entity.unity.howl'
+  # FixedUpdate ----------
+  '''
+  "ᑔ"
+  ''': 'entity.unity.howl'
+  # OnEnable -------------
+  '''
+  "🀰"
+  ''': 'entity.unity.howl'
+  # OnDisable -------------
+  '''
+  "🀱"
+  ''': 'entity.unity.howl'
+  # Step ------------------
+  '''
+  "⼻"
+  ''': 'entity.activelogic.howl'
+  # Instantiate ------------------
+  '''
+  "✧"
+  ''': 'entity.name.instantiate.howl'
   # ----------------------
   '''
   "•"

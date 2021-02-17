@@ -128,6 +128,9 @@
   'Throw':
     prefix : 'throw'
     body   : '(╯°□°)╯ '
+  'Throw new System.Exception':
+    prefix : 'throwEx'
+    body   : '(╯°ѡ°)⸗ '
   'Finally':
     prefix : 'finally'
     body   : '(˙▿˙) '
@@ -278,6 +281,9 @@
   'Queue':
     prefix : 'Queue'
     body   : 'ℚ'
+  'Instantiate':
+    prefix : 'Instantiate'
+    body   : '✧'
   'Stack':
     prefix : 'Stack'
     body   : '𝕂'
@@ -389,12 +395,30 @@
   'Assert.Throws':
     prefix : 'AssertT'
     body   : 'ಠᴗಠ<$1>( ⎚ $0 );'
+  '[ExecuteInEditMode]':
+    prefix : 'ExecuteInEditMode'
+    body   : 'ⓔ'
+  '[DisallowMultipleComponent]':
+    prefix : 'DisallowMultipleComponent'
+    body   : '①'
+  '[HideInInspector]':
+    prefix : 'HideInInspector'
+    body   : 'ⓗ'
+  '[Multiline]':
+    prefix : 'Multiline'
+    body   : 'ⓜ'
   'GameObject':
     prefix : 'GameObject'
     body   : 'ロ'
   'Component':
     prefix : 'Component'
     body   : '⫙'
+  'MonoBehaviour':
+    prefix : 'MonoBehaviour'
+    body   : '🧩'
+  'XBehaviour':
+    prefix : 'XBehaviour'
+    body   : '🕹'
   'Transform':
     prefix : 'Transform'
     body   : 'エ'
@@ -440,6 +464,39 @@
   'Point4':
     prefix : 'p4'
     body   : 'メ̂'
+  'Raycast':
+    prefix : 'Raycast'
+    body   : 'Ʀ($0, u, out hit, dist)'
+  'Spherecast':
+    prefix : 'Spherecast'
+    body   : 'Ʀ($0, ρ, u, out hit, dist)'
+  'Find Object':
+    prefix : 'The'
+    body   : 'Ⴋ<$0>()'
+  'Find Objects':
+    prefix : 'All'
+    body   : 'Ⴌ<$0>()'
+  'GameObject.Find':
+    prefix : 'Find'
+    body   : 'Ⴄ($0)'
+  'Void Awake()':
+    prefix : 'Awake'
+    body   : 'ᑍ '
+  'Void Start()':
+    prefix : 'Start'
+    body   : 'ᐅ '
+  'Void Update()':
+    prefix : 'Update'
+    body   : 'ᑐ '
+  'Void FixedUpdate()':
+    prefix : 'FixedUpdate'
+    body   : 'ᑔ '
+  'Void OnEnable()':
+    prefix : 'OnEnable'
+    body   : '🀰 '
+  'Void OnDisable()':
+    prefix : 'OnDisable'
+    body   : '🀱 '
   'time':
     prefix : 'time'
     body   : '⒯'
@@ -524,6 +581,15 @@
   'Failure':
     prefix : 'failure'
     body   : 'ⓧ '
+  'Task':
+    prefix : 'Task'
+    body   : '🦋'
+  'UTask':
+    prefix : 'UTask'
+    body   : '🌱'
+  'XTask':
+    prefix : 'XTask'
+    body   : '🍄'
   '.due':
     prefix : 'due'
     body   : 'ʾ '
@@ -572,6 +638,9 @@
   'Return impending.fail();':
     prefix : 'iff'
     body   : '■̠ʿ'
+  'Override public status Step':
+    prefix : 'Step'
+    body   : '⼻ '
   'Seq':
     prefix : 'Seq'
     body   : '⍈() ⟦ $1 ⟧'
@@ -596,3 +665,21 @@
   'Tie(':
     prefix : 'Tie'
     body   : '⁅ $1 × $2 ⁆'
+  'Using Active.Core; using static Active.Status;':
+    prefix : 'usingAL'
+    body   : 'Ɑℓ '
+  'Using Kabuki;':
+    prefix : 'usingKabuki'
+    body   : '𝐊 '
+  'Using UnityEngine; using UnityEngine.UI;':
+    prefix : 'usingUnity'
+    body   : '𝖴 '
+  'Using UnityEditor':
+    prefix : 'usingEd'
+    body   : '𝖴ᵉ '
+  'Using System; using System.Linq;':
+    prefix : 'usingSystem'
+    body   : '𝚂 '
+  'Using System.Collections; using System.Collections.Generic;':
+    prefix : 'usingCollections'
+    body   : '𝙲 '
